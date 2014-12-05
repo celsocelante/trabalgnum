@@ -1,0 +1,23 @@
+trabalgnum
+==========
+
+Trabalho para a disciplina de Algoritmos Numéricos I, oferecida ao curso de Ciência da Computação da Universidade Federal do Espírito Santo.
+
+==========
+
+Alunos:
+	Celso Ademar Celante Junior
+	Marcos Aurélio Pereira Prado
+	Vanderlei Vieria de Souza Filho
+
+==========
+
+Instruções: 
+
+	Para executar o código digite em terminal:
+	
+		octave script.m
+
+	O usuário será orientado a entrar com os dados do programa a partir de então.
+
+==========

@@ -30,7 +30,7 @@ endfunction
 
 
 %PASSO 3
-function pz = interpola(n, x, y, z)
+function interpola(n, x, y, z)
 	%Armazena os indices dos pontos base para a interpolação
 	pb = selecionaPontosBase(n,x,z);
 	
@@ -40,7 +40,7 @@ function pz = interpola(n, x, y, z)
 		yn(1,i) = y(1,pb(1,i));
 	end
 	
-	disp("As n+1 abscissas escolhidas entre as m abscissas informadas e suas respectivas ordenadas: ");
+	disp("\n\nAs n+1 abscissas escolhidas entre as m abscissas informadas e suas respectivas ordenadas: \n");
 	xn
 	yn
 
@@ -63,7 +63,7 @@ function pz = interpola(n, x, y, z)
 	pz = pz + soma;
 
 	disp("O valor interpolado pelo metodo de Newton: ");
-	pz;
+	pz
 	
 	disp("O valor aproximado do erro de truncamento calculado: ");
 	calculaErroTruncamento(z,n,x,y)
@@ -74,8 +74,7 @@ endfunction
 
 
 %PASSO 4
-function erro = calculaErroTruncamento(z, n, x, y)
-		
+function  calculaErroTruncamento(z, n, x, y)		
 	pb = selecionaPontosBase(n,x,z);
 	
 
@@ -102,7 +101,7 @@ function erro = calculaErroTruncamento(z, n, x, y)
 		end
 	end
 
-	erro = abs(produto*maxdd);
+	erro = abs(produto*maxdd)
 
 endfunction
 
@@ -118,7 +117,7 @@ z = input("Informe o valor z a ser interpolado: ");
 
 
 %interpola(2, [0.2,0.34,0.4,0.52,0.6,0.72], [0.16,0.22,0.27,0.29,0.32,0.37], 0.47)
-interpola(n,x,y,z)
+interpola(n,x,y,z);
 
 
 
